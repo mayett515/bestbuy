@@ -82,6 +82,9 @@ product_list = [
     products.Product("Bose QuietComfort Earbuds", price=250, quantity=500),
     products.Product("Google Pixel 7", price=500, quantity=250)
 ]
+
+promotion = products.PercentageDiscount("good sale", 10)
+product_list[0].promotion = promotion
 best_buy = store.Store(product_list)
 
 # Start the application
